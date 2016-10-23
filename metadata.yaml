@@ -1,0 +1,27 @@
+name: mythtv-backend
+summary: Personal video recorder application (server)
+maintainer: Dave Chiluk <chiluk@ubuntu.com>
+description: |
+  MythTV provides a unified graphical interface for recording and viewing
+  television programs. Refer to the mythtv package for more information.
+  This package contains only the server software, which provides video
+  and audio capture and encoding services. In order to be useful, it
+  requires a mythtv-frontend installation, either on the same system or
+  one reachable via the network.  A database is also required. The
+  mythtv-database package must be installed, either on the same system,
+  or one reachable via the network.  For a complete installation of all
+  MythTV components, install the 'mythtv' package.
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - misc
+subordinate: false
+provides:
+  provides-relation:
+    interface: interface-name
+requires:
+  requires-relation:
+    interface: interface-name
+peers:
+  peer-relation:
+    interface: interface-name
