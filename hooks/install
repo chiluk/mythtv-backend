@@ -1,0 +1,11 @@
+#!/bin.bash
+set -e
+status-set maintenance "Installing mythtv-backend and dependencies"
+apt install -y mythtv-backend-master ubuntu-desktop
+# Asks for mysql root password
+# Asks for other frontends
+# Asks for 
+
+# User must be part of mythtv group
+
+status-set maintenance "Installation complete"
